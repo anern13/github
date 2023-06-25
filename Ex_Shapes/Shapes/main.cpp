@@ -8,15 +8,18 @@
 
 #include "glut_utils.h"
 
-#include "point.hpp"
+#include "circle.hpp"
 
 void DrawFunction();
 static int TimerFunction();
 
-ilrd::Point g_center;
+using namespace ilrd;
+
+Circle c(Point(1,1),15,IShape::BLUE);
 
 int main(int argc, char const *argv[])
 {
+
     DrawInit(argc, (char**)argv, 1920, 1080, DrawFunction);
     DrawSetTimerFunc(TimerFunction, 100);
 
@@ -27,15 +30,12 @@ int main(int argc, char const *argv[])
 
 void DrawFunction()
 {
-    
-    DrawCircle(COLOR_GREEN, g_center.GetX(), g_center.GetY(), 15);
+    c.Draw();
 }
 
 static int TimerFunction()
 {
-    ilrd::Point temp(1,1);
-
-    g_center += temp;
+    c.Move(Point(1,1));
 
     return 1;  /* draw */
 }

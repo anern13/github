@@ -31,6 +31,8 @@ Circle& Circle::operator=(const Circle& rhs_)
     m_rad = rhs_.m_rad;
     m_center = rhs_.m_center;
     m_color = rhs_.m_color;
+
+    return *this;
 }
 
 void Circle::Draw()
