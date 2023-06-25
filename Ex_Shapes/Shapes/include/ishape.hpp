@@ -1,13 +1,14 @@
 /******************************************************************************/
 //Author : anern13
-//Project : Shapes
+//Project : IShapes
 //Date : 20 / 06 / 22 
 //Version : 1.0
 /******************************************************************************/
-#ifndef SHAPES_ANER_CPP
-#define SHAPES_ANER_CPP
+#ifndef IShapeS_ANER_CPP
+#define IShapeS_ANER_CPP
 
 #include <vector>
+#include <memory>
 
 #include "point.hpp"
 
@@ -17,22 +18,34 @@ namespace ilrd
 class IShape
 {
 public:
-    IShape() = default;
+    enum COLORS
+    {
+        RED     = 0x010000,
+        GREEN   = 0x000100,
+        BLUE    = 0x000001,
+        YELLOW  = 0x010100,
+        MAGENTA = 0x010001,
+        CYAN    = 0x000101,
+        WHITE   = 0x010101,
+        BLACK   = 0x000000,
+        FILL    = 0x8000000
+    };
+    IShape()=default;
     IShape(const IShape& o_) = default;
     IShape& operator=( IShape& rhs_) = default;
-    ~IShape() = default;
+    virtual ~IShape() = default;
 
     virtual void Draw() = 0;
-    virtual void Move();
-    virtual void Rotate();
-
-private:
+    virtual void Move(Point relative_tar_);
+    virtual void Rotate(double angle_);
+protected:
     Point m_center;
-    std::vector<IShape> m_shapes;
-    
-
+    int m_color;
+    //irenderer*  ?
+private:
+    std::vector<std::shared_ptr<IShape>> m_shapes;
 };
 
 }//namespace ilrd
 
-#endif //SHAPES_ANER_CPP
+#endif //IShapeS_ANER_CPP

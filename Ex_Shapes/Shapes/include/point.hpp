@@ -11,9 +11,9 @@ class Point
 public:
     explicit Point();
     explicit Point(double x, double y);
-    //~Point() = default;
-    //Point(const Point&) = default;
-    //Point& operator=(const Point&) = default;
+    ~Point() = default;
+    Point(const Point&) = default;
+    Point& operator=(const Point&) = default;
 
 
     // move the point to given coordinate

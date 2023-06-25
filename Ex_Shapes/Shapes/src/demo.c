@@ -23,11 +23,11 @@ int main(int argc, char** argv)
     DrawInit(argc, argv, 1000, 1000, DrawFunction);
 
     /* advanced: extra functionality */
-    DrawSetKeyboardFunc(KeyboardFunction);
+     DrawSetKeyboardFunc(KeyboardFunction);
     DrawSetMouseFunc(MouseFunction);
     DrawSetMotionFunc(MotionFunction);
     DrawSetTimerFunc(TimerFunction, 100);
-
+ 
     DrawMainLoop();
 
     printf("exit\n");
