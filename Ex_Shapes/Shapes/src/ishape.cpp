@@ -14,18 +14,13 @@ namespace ilrd
 
 void IShape::Move(Point target_)
 {
-    for(auto iter : m_shapes)
-    {
-        iter->m_center += target_; 
-    }
+    m_center += target_; 
 }
 
 void IShape::Rotate(double angle_)
 {
-    for(auto iter : m_shapes)
-    {
-        iter->m_center.Revolve(m_center, angle_);
-    }
+    
+    m_center.Revolve(m_center, angle_);
 }
 
 } // namespace ilrd

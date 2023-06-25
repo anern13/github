@@ -30,6 +30,7 @@ public:
         BLACK   = 0x000000,
         FILL    = 0x8000000
     };
+
     IShape()=default;
     IShape(const IShape& o_) = default;
     IShape& operator=( IShape& rhs_) = default;
@@ -42,8 +43,6 @@ protected:
     Point m_center;
     int m_color;
     //irenderer*  ?
-private:
-    std::vector<std::shared_ptr<IShape>> m_shapes;
 };
 
 }//namespace ilrd
