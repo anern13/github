@@ -2,7 +2,8 @@
 //Author : anern13
 //Project : IShapes
 //Date : 20 / 06 / 22 
-//Version : 1.0
+//Version : 1.1
+    //now ishape is responsible for init of cent,col 
 /******************************************************************************/
 #ifndef IShapeS_ANER_CPP
 #define IShapeS_ANER_CPP
@@ -31,7 +32,7 @@ public:
         FILL    = 0x8000000
     };
 
-    IShape()=default;
+    explicit IShape() = default;
     IShape(const IShape& o_) = default;
     IShape& operator=( IShape& rhs_) = default;
     virtual ~IShape() = default;
@@ -42,6 +43,7 @@ public:
 protected:
     Point m_center;
     int m_color;
+    void Init(Point center_, COLORS color_ = BLACK);
     //irenderer*  ?
 };
 

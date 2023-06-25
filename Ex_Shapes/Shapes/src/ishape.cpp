@@ -11,6 +11,11 @@
 
 namespace ilrd
 {
+void IShape::Init(Point center_, IShape::COLORS color_ )
+{
+    m_center = center_;
+    m_color = color_;
+}
 
 void IShape::Move(Point target_)
 {

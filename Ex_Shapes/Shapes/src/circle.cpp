@@ -15,22 +15,19 @@ namespace ilrd
 Circle::Circle(Point center_, double rad_, IShape::COLORS color_):
 m_rad(rad_)
 {
-    m_center = center_;
-    m_color = color_;
+    Init(center_, color_);
 }
 
 Circle::Circle(const Circle& o_):
 m_rad(o_.m_rad)
 {
-    m_center = o_.m_center;
-    m_color = o_.m_color;
+    Init(o_.m_center, (COLORS)o_.m_color);
 }
 
 Circle& Circle::operator=(const Circle& rhs_)
 {
     m_rad = rhs_.m_rad;
-    m_center = rhs_.m_center;
-    m_color = rhs_.m_color;
+    Init(rhs_.m_center, (COLORS)rhs_.m_color);
 
     return *this;
 }

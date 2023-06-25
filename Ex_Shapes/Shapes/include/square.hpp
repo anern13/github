@@ -16,11 +16,13 @@ namespace ilrd
 class Square: public IShape
 {
 public:
-    Square(double side_ = 1);
+    Square(Point center_, double side_ = 1, IShape::COLORS color_ = IShape::BLACK);
     Square(const Square& o_);
     Square& operator=(const Square& rhs_);
     ~Square() = default;
     virtual void Draw();
+private:
+    double m_side;
 };
     
 } // namespace ilrd

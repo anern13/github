@@ -16,7 +16,7 @@ namespace ilrd
 class Circle: public IShape
 {
 public:
-    Circle( Point center_ ,double rad_ = 1, IShape::COLORS color_ = BLACK);
+    Circle( Point center_ , double rad_ = 1, IShape::COLORS color_ = BLACK);
     Circle(const Circle& o_);
     Circle& operator=(const Circle& rhs_);
     ~Circle() = default;
