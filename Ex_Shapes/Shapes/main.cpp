@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
 {
 
     DrawInit(argc, (char**)argv, 1920, 1080, DrawFunction);
-    DrawSetTimerFunc(TimerFunction, 50);
+    DrawSetTimerFunc(TimerFunction, 20);
 
     DrawMainLoop();
 
@@ -39,7 +39,7 @@ static int TimerFunction()
     c.Move(Point(1,1));
     s.Move(Point(-1,-1));
 
-    s.Rotate(0.5);
+    s.Rotate(0.2);
 
     return 1;  /* draw */
 }
