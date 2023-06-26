@@ -16,7 +16,8 @@ namespace ilrd
 class Rectangle: public IShape
 {
 public:
-    Rectangle(double len_ = 1, double width_ = 1);
+    Rectangle(double len_ = 1, double width_ = 1 ,Point center_, IShape::COLORS
+    color = BLACK);
     Rectangle(const Rectangle& o_);
     Rectangle& operator=(const Rectangle& rhs_);
     ~Rectangle() = default;

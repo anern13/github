@@ -4,8 +4,6 @@
 //Date : 20 / 06 / 22 
 //Version : 1.0
 /******************************************************************************/
-
-
 #include "glut_utils.h"
 
 #include "circle.hpp"
@@ -40,6 +38,7 @@ static int TimerFunction()
 {
     c.Move(Point(1,1));
     s.Move(Point(-1,-1));
+
     s.Rotate(0.5);
 
     return 1;  /* draw */
