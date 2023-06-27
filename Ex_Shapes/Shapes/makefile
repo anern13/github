@@ -19,3 +19,5 @@ $(SHAP_LIB): $(OBJS)
 objs/%.o: src/%.cpp
 	$(GPP) -I include -fpic -c $< -o $@
 	
+demo: src/demo.c lib/libglut_utils.so
+	gcc src/demo.c -I include -Wl,-rpath=. lib/libglut_utils.so

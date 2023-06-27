@@ -11,13 +11,16 @@
 #include <memory>        //std::shared_ptr
 #include <functional>    //std::function
 
-#include "singleton.hpp"
-
 /******************************************************************************/
 template <typename KEY, typename BASE, typename ARGS>
 class Factory
 {
 public:
+    explicit Factory() = default;
+    Factory(const Factory& other_) = delete;
+    Factory& operator=(const Factory& other_) = delete;
+    ~Factory() = default;
+
     //Base must contain static CreateFunc  
     using CreateFunc = std::function<std::shared_ptr<BASE>(ARGS args_)>;
 
@@ -26,15 +29,8 @@ public:
     // Create may throw exception
     std::shared_ptr<BASE> Create(const KEY& key_, ARGS args_);
 
-
-    Factory(const Factory& other_) = delete;
-    Factory& operator=(const Factory& other_) = delete;
 private:
-    ~Factory() = default;
-    explicit Factory() = default;
-
     std::unordered_map<KEY, CreateFunc> m_map;
-    friend class Singleton<Factory>;
 };
 /******************************************************************************/
 template <typename KEY, typename BASE, typename ARGS>

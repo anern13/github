@@ -8,45 +8,64 @@
 #define __ANER_SCREEN_MAMAGER_HPP__
 
 #include <vector>
-#include <memory>//shared_ptr
+#include <memory>       //std::shared_ptr
+#include <functional>   //std::function
 
 #include "ishape.hpp"
 #include "factory.hpp"
 
 class Action;
+struct Args;
+
 
 class ScreenMan
 {
 public: 
+
     enum Shapes
     {
-
+        CIRCLE = 0,
+        SQUARE = 1
     };
 
     explicit ScreenMan();
     ScreenMan(const ScreenMan& o_) = delete;
     ScreenMan& operator=(const ScreenMan& rhs_) = delete;
-    ~ScreenMan();
+    ~ScreenMan() = default;
 
-    void ConfigShape();
-    void AddShape();
+    using ShapeCreate = std::function<std::shared_ptr<ilrd::IShape>(Args)>;
+
+    void ConfigShape(Shapes name_, ShapeCreate cf_);
+    void AddShape(Shapes name_, Args args_);
     void AddAction(std::shared_ptr<Action> act_);
+    void Display();
 
 private:
+
     std::vector<std::shared_ptr<ilrd::IShape>> m_shapes;
     std::vector<std::shared_ptr<Action>> m_acts;
 
-    Singleton<Factory<Shapes, ilrd::IShape, /*insert args*/>> m_shape_factory;
+    Factory<Shapes, ilrd::IShape, Args> m_shape_factory;
+    
+    int m_hight;
+    int m_width; 
 };
 
 class Action
 {
-    Action() = default;
+public:
+
+    explicit Action() = default;
     Action(const Action& o_) = delete;
     Action& operator=(const Action& rhs_) = delete;
     virtual ~Action() = default;
 
     virtual void Act() = 0;
+};
+
+struct Args
+{
+    
 };
 
 
