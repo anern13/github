@@ -1,0 +1,12 @@
+C:\Users\anern\github\WS2\Slist\bin\Debug\net6.0\Slist.deps.json
+C:\Users\anern\github\WS2\Slist\bin\Debug\net6.0\Slist.dll
+C:\Users\anern\github\WS2\Slist\bin\Debug\net6.0\Slist.pdb
+C:\Users\anern\github\WS2\Slist\obj\Debug\net6.0\Slist.csproj.AssemblyReference.cache
+C:\Users\anern\github\WS2\Slist\obj\Debug\net6.0\Slist.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anern\github\WS2\Slist\obj\Debug\net6.0\Slist.AssemblyInfoInputs.cache
+C:\Users\anern\github\WS2\Slist\obj\Debug\net6.0\Slist.AssemblyInfo.cs
+C:\Users\anern\github\WS2\Slist\obj\Debug\net6.0\Slist.csproj.CoreCompileInputs.cache
+C:\Users\anern\github\WS2\Slist\obj\Debug\net6.0\Slist.dll
+C:\Users\anern\github\WS2\Slist\obj\Debug\net6.0\refint\Slist.dll
+C:\Users\anern\github\WS2\Slist\obj\Debug\net6.0\Slist.pdb
+C:\Users\anern\github\WS2\Slist\obj\Debug\net6.0\ref\Slist.dll

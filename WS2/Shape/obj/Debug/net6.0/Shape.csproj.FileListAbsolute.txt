@@ -1,0 +1,12 @@
+C:\Users\anern\github\WS2\Shape\bin\Debug\net6.0\Shape.deps.json
+C:\Users\anern\github\WS2\Shape\bin\Debug\net6.0\Shape.dll
+C:\Users\anern\github\WS2\Shape\bin\Debug\net6.0\Shape.pdb
+C:\Users\anern\github\WS2\Shape\obj\Debug\net6.0\Shape.csproj.AssemblyReference.cache
+C:\Users\anern\github\WS2\Shape\obj\Debug\net6.0\Shape.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anern\github\WS2\Shape\obj\Debug\net6.0\Shape.AssemblyInfoInputs.cache
+C:\Users\anern\github\WS2\Shape\obj\Debug\net6.0\Shape.AssemblyInfo.cs
+C:\Users\anern\github\WS2\Shape\obj\Debug\net6.0\Shape.csproj.CoreCompileInputs.cache
+C:\Users\anern\github\WS2\Shape\obj\Debug\net6.0\Shape.dll
+C:\Users\anern\github\WS2\Shape\obj\Debug\net6.0\refint\Shape.dll
+C:\Users\anern\github\WS2\Shape\obj\Debug\net6.0\Shape.pdb
+C:\Users\anern\github\WS2\Shape\obj\Debug\net6.0\ref\Shape.dll

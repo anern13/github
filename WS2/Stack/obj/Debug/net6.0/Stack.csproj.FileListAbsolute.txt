@@ -1,0 +1,12 @@
+C:\Users\anern\github\WS2\Stack\bin\Debug\net6.0\Stack.deps.json
+C:\Users\anern\github\WS2\Stack\bin\Debug\net6.0\Stack.dll
+C:\Users\anern\github\WS2\Stack\bin\Debug\net6.0\Stack.pdb
+C:\Users\anern\github\WS2\Stack\obj\Debug\net6.0\Stack.csproj.AssemblyReference.cache
+C:\Users\anern\github\WS2\Stack\obj\Debug\net6.0\Stack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anern\github\WS2\Stack\obj\Debug\net6.0\Stack.AssemblyInfoInputs.cache
+C:\Users\anern\github\WS2\Stack\obj\Debug\net6.0\Stack.AssemblyInfo.cs
+C:\Users\anern\github\WS2\Stack\obj\Debug\net6.0\Stack.csproj.CoreCompileInputs.cache
+C:\Users\anern\github\WS2\Stack\obj\Debug\net6.0\Stack.dll
+C:\Users\anern\github\WS2\Stack\obj\Debug\net6.0\refint\Stack.dll
+C:\Users\anern\github\WS2\Stack\obj\Debug\net6.0\Stack.pdb
+C:\Users\anern\github\WS2\Stack\obj\Debug\net6.0\ref\Stack.dll
