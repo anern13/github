@@ -1,0 +1,14 @@
+*
+!*.h
+!*.c
+!*.cpp
+!*.hpp
+!*.a
+!*.sh
+!*/
+!*.gitignore
+!*.myfuncs 
+!*makefile
+!*Makefile
+!*.sln
+!*.cs
